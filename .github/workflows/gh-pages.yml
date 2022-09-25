@@ -43,6 +43,7 @@ jobs:
       run: |
         echo API_KEY=${API_KEY} > .env.development.local
         echo API_KEY=${API_KEY} > .env.local
+        cat .env.local
 
     # Next.jsアプリをビルドする
     # プロジェクトルート直下に.nextディレクトリができる
