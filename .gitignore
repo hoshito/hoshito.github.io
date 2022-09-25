@@ -107,3 +107,6 @@ dist
 .env.development.local
 .env.local
 
+# Next.js export
+out
+
