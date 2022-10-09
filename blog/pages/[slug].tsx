@@ -1,7 +1,7 @@
 import { client } from "../libs/client";
 
 export default function BlogId({ blog }) {
-  return (
+  return blog ? (
     <main>
       <div
         dangerouslySetInnerHTML={{
@@ -9,6 +9,8 @@ export default function BlogId({ blog }) {
         }}
       />
     </main>
+  ) : (
+    <div>no content</div>
   );
 }
 
