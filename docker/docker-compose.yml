@@ -8,6 +8,4 @@ services:
     tty: true
     ports:
       - 3000:3000
-    volumes:
-      - ../blog:/root/work/${BLOG_NAME}
-
+      - 8080:8080

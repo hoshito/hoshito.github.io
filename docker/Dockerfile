@@ -5,11 +5,10 @@ ARG WORK_DIR=/root/work
 RUN mkdir -p ${WORK_DIR}
 WORKDIR ${WORK_DIR}
 
-RUN npx create-next-app tmp && \
-    cd tmp && \
-    npm install --save microcms-js-sdk
+RUN apt-get update && \
+    apt-get install uuid-runtime && \
+    curl -fsSL https://code-server.dev/install.sh | sh
+COPY config.yaml /root/.config/code-server/config.yaml
+RUN echo "password: `uuidgen`" >> /root/.config/code-server/config.yaml
 
-EXPOSE 3000
-
-CMD bash
-
+ENTRYPOINT code-server
