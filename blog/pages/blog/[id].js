@@ -2,7 +2,7 @@ import { client } from "../../libs/client";
 
 export default function BlogId({ blog }) {
   return (
-    <main>
+    <main class="prose prose dark:prose-invert pt-8 pl-3 pr-3">
       <h1>{blog.title}</h1>
       <p>{blog.publishedAt}</p>
       <div
