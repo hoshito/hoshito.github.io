@@ -3,15 +3,15 @@ import { client } from "../libs/client";
 
 export default function Home({ blog }) {
   return (
-    <div class="flex flex-wrap container mx-auto px-4">
+    <div className="flex flex-wrap container mx-auto px-4">
       {blog.map((blog) => (
-        <div key={blog.id} class="w-96 px-2 py-2">
+        <div key={blog.id} className="w-96 px-2 py-2">
           <Link href={`/blog/${blog.id}`}>
             <a>
-              <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-                <img class="w-full h-auto rounded-t-xl" src={blog.eyecatch.url} />
-                <div class="p-4 md:p-5">
-                  <h3 class="text-lg font-bold text-gray-800 dark:text-white">{blog.title}</h3>
+              <div className="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                <img className="w-full h-auto rounded-t-xl" src={blog.eyecatch.url} />
+                <div className="p-4 md:p-5">
+                  <h3 className="text-lg font-bold text-gray-800 dark:text-white">{blog.title}</h3>
                 </div>
               </div>
             </a>
