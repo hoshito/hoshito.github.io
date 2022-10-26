@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 bg-gray-200 dark:bg-gray-800">
         <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
           <div className="flex items-center justify-between">
-            <a className="flex-none text-xl font-semibold dark:text-white" href="/">Brand</a>
+            <a className="flex-none text-xl font-semibold dark:text-white" href="/">Home</a>
             <div className="sm:hidden">
               <button type="button" className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                 <svg className="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -24,9 +24,10 @@ function MyApp({ Component, pageProps }) {
           </div>
           <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-              <a className="font-medium text-blue-500" href="/" aria-current="page">dummy</a>
-              <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="/">dummy</a>
-              <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="/">dummy</a>
+              <a className="font-medium text-blue-500" href="/blog/iylmoc-30c4m" aria-current="page">Profile</a>
+              <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="https://github.com/hoshito">GitHub</a>
+              <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="https://qiita.com/Hoshito">Qiita</a>
+              <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="https://zenn.dev/hoshito">Zenn</a>
             </div>
           </div>
         </nav>
