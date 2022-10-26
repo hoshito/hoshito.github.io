@@ -12,7 +12,7 @@ export default function Home({ blog }) {
                 <img className="w-full h-auto rounded-t-xl" src={blog.eyecatch.url} />
                 <div className="p-4 md:p-5">
                   <h3 className="text-lg font-bold text-gray-800 dark:text-white">{blog.title}</h3>
-                  <p className="text-sm">{formatDate(blog.publishedAt)}</p>
+                  <p suppressHydrationWarning={true} className="text-sm">{formatDate(blog.publishedAt)}</p>
                 </div>
               </div>
             </a>
