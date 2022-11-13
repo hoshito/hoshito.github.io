@@ -6,6 +6,8 @@ services:
       context: .
       dockerfile: ./Dockerfile
     tty: true
+    volumes:
+      - ../blog:/root/work/blog
     ports:
       - 3000:3000
       - 8080:8080
